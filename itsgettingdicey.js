@@ -1,14 +1,22 @@
-document.getElementById('rollTheDiceBtn').addEventListener('click', startGame);
+document.getElementById("rollTheDiceBtn").addEventListener("click", startGame);
 
-let inputNumber = getElementById(inputNumber);
-inputNumber
+// let inputNumber = getElementById(inputNumber);
+// inputNumber;
 
 function startGame() {
-    const throwDice = getRandomNum();
-    let imgTag = document.getElementById('diceImg');
-    imgTag.src = `src/img/dice-${throwDice}.png`
+  const throwDiceOne = getRandomNumOne();
+  const throwDiceTwo = getRandomNumTwo();
+
+  let imgTagOne = document.getElementById("diceImgOne");
+  imgTagOne.src = `src/img/dice-${throwDiceOne}.png`;
+  let imgTagTwo = document.getElementById("diceImgTwo");
+  imgTagTwo.src = `src/img/dice-${throwDiceTwo}.png`;
 }
 
-function getRandomNum() {
-    return Math.ceil(Math.random()*6);
-} 
+function getRandomNumOne() {
+  return Math.ceil(Math.random() * 6);
+}
+
+function getRandomNumTwo() {
+  return Math.ceil(Math.random() * 6);
+}
