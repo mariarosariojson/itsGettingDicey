@@ -58,7 +58,7 @@
   text-align: center;
 }
 
-.inputNumber {
+.input-number {
   display: flex;
   flex-direction: column;
   font-size: 100px;

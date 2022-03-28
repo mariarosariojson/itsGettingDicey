@@ -1,20 +1,20 @@
 document.getElementById("rollTheDiceBtn").addEventListener("click", startGame);
 
-// let inputNumber = getElementById(inputNumber);
-// inputNumber;
-
 function startGame() {
   const throwDiceOne = getRandomNumOne();
   const throwDiceTwo = getRandomNumTwo();
   const totalScore = document.getElementById("totalScore");
   let diceTotal = throwDiceOne + throwDiceTwo;
   console.log(diceTotal);
-  totalScore.innerHTML = `<span style='font-size: 40px; color: green;'>total score is: ${diceTotal}</span>`;
+  totalScore.innerHTML = `<span style='font-size: 40px; color: grey;'>total score is: ${diceTotal}</span>`;
 
   let imgTagOne = document.getElementById("diceImgOne");
   imgTagOne.src = `src/img/dice-${throwDiceOne}.png`;
   let imgTagTwo = document.getElementById("diceImgTwo");
   imgTagTwo.src = `src/img/dice-${throwDiceTwo}.png`;
+  if (throwDiceOne == throwDiceTwo) {
+    totalScore.innerHTML = `<span style='font-size: 40px; color: green;'>It's a pair!!</span>`;
+  }
 }
 
 function getRandomNumOne() {
