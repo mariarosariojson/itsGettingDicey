@@ -9,14 +9,14 @@
 
 .header {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 50px;
   font-size: 4rem;
   text-shadow: 3px 3px 4px rgb(143, 143, 143);
   letter-spacing: 0.1rem;
 }
 
 .container {
-  padding-top: 60px;
+  padding-top: 70px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap-reverse;
@@ -45,14 +45,17 @@
 .playControl {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 30px;
+  align-items: center;
+  padding: 10px;
+  width: 400px;
+  height: 300px;
 }
 
 .instruction {
   color: rgb(107, 107, 107);
   font-size: 18px;
   padding-bottom: 20px;
+  text-align: center;
 }
 
 .inputNumber {
@@ -62,10 +65,10 @@
   width: 100px;
   padding-left: 20px;
   border: none;
-  align-self: center;
 }
 
 button {
+  display: flex;
   padding: 10px 30px 10px 30px;
   margin-top: 40px;
   background-color: transparent;
@@ -73,6 +76,7 @@ button {
   font-size: 1.5rem;
   letter-spacing: 0.07rem;
   box-shadow: 5px 5px 0px rgb(107, 155, 107);
+  width: 200px;
 }
 
 button:hover {
