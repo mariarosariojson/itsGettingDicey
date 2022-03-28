@@ -8,12 +8,20 @@
     <title>it's getting dicey</title>
 </head>
 <body>
+    <h1 class="header">It's Getting Dicey!</h1>
     <div class="container">
-        <h1 class="header">It's Getting Dicey!</h1>
+        <div class="dice">
         <div class="dice-img">
             <img src="/src/img/dice-thumbnail.png" alt="images" id="diceImg">
-        </div>
+            </div>
+        
+        </div class="playControl">
+        <div>
+        <p>pick a number between 1 & 6</p>
+        <input type="number" class="inputNumber" placeholder="0" min="1" max="6"></input>
+        
         <button id="rollTheDiceBtn">ROLL THE DICE!!</button>
+        </div>
     </div>
     
 

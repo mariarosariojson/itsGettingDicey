@@ -8,25 +8,26 @@
 }
 
 .header {
+  text-align: center;
+  margin-top: 40px;
   font-size: 4rem;
   text-shadow: 5px 5px 4px rgb(143, 143, 143);
 }
 
 .container {
-  padding-top: 50px;
+  padding-top: 60px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
   margin: 0 auto;
-  width: 600px;
-  height: 700px;
+  width: 700px;
   justify-content: space-between;
   align-items: center;
   letter-spacing: 0.1rem;
 }
 
 .dice-img {
-  width: 450px;
-  height: 450px;
+  width: 400px;
+  height: 400px;
 }
 
 .dice-img img {
@@ -34,8 +35,17 @@
   height: 100%;
 }
 
+.inputNumber {
+  text-align: center;
+  font-size: 100px;
+  width: 200px;
+  padding: 10px 20px 10px 20px;
+  border: none;
+}
+
 button {
   padding: 10px 30px 10px 30px;
+  margin-top: 40px;
   background-color: transparent;
   border: solid 0.05rem black;
   font-size: 1.5rem;
