@@ -15,11 +15,10 @@ function startGame() {
   imgTagTwo.src = `src/img/dice-${throwDiceTwo}.png`;
   
   if(inputNumber.value == diceTotal) {
-      console.log(`KNOCK-OUT!`);
-    totalScore.innerHTML = `<span style='font-size: 40px; color: red;'>KNOCK OUT!!!</span>`;
-    gameStatus.innerHTML = `Sorry, you're out 👎`;
+    totalScore.innerHTML = `<span style='font-size: 60px; color: red;'>KNOCK OUT!!!</span>`;
+    gameStatus.innerHTML = `Sorry, you're out 👎 <br/>Click Go again to start a new game.`;
   } else {
-      gameStatus.innerHTML = `<span style='font-size: 18px; color: green;'>You're good, Go again! 🎉</span>`;
+      gameStatus.innerHTML = `<span style='font-size: 18px; color: green;'>You're good 🎉 <br/>Roll the dice again! </span>`;
   }
 }
 
