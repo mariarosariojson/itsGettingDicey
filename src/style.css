@@ -67,7 +67,7 @@
   border: none;
 }
 
-button {
+.rollTheDiceBtn {
   display: flex;
   padding: 10px 30px 10px 30px;
   margin-top: 40px;
@@ -79,7 +79,24 @@ button {
   width: 200px;
 }
 
-button:hover {
+.rollTheDiceBtn:hover {
+  background-color: rgb(152, 210, 152);
+  color: white;
+  border: solid 0.05rem transparent;
+}
+
+.reloadBtn {
+  display: flex;
+  padding: 10px 20px 10px 20px;
+  margin-top: 20px;
+  background-color: transparent;
+  border: solid 0.05rem black;
+  font-size: 0.8rem;
+  letter-spacing: 0.07rem;
+  box-shadow: 5px 5px 0px rgb(107, 155, 107);
+  width: 100px;
+}
+.reloadBtn:hover {
   background-color: rgb(152, 210, 152);
   color: white;
   border: solid 0.05rem transparent;
