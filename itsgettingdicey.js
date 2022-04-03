@@ -6,12 +6,14 @@ function getRandomNumTwo() {
 }
 
 function startGame() {
-  const throwDiceOne = getRandomNumOne();
-  const throwDiceTwo = getRandomNumTwo();
+  let throwDiceOne = getRandomNumOne();
+  let throwDiceTwo = getRandomNumTwo();
   const totalScore = document.getElementById("totalScore");
   const gameStatus = document.getElementById("gameStatus");
   let diceTotal = throwDiceOne + throwDiceTwo;
-  totalScore.innerHTML = `<span style='font-size: 40px; color: grey;'>total is: ${diceTotal}</span>`;
+
+  totalScore.innerHTML = `<span style='font-size: 40px; color: grey;'>
+  total is: ${diceTotal}</span>`;
 
   let imgTagOne = document.getElementById("diceImgOne");
   imgTagOne.src = `src/img/dice-${throwDiceOne}.png`;

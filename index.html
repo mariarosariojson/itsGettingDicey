@@ -1,41 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css" />
     <title>it's getting dicey</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1 class="header">It's Getting Dicey!</h1>
-    
+
     <div class="container">
+      <div class="diceOne-img">
+        <img
+          src="/src/img/diceOne-thumbnail.png"
+          alt="images"
+          id="diceImgOne"
+        />
+      </div>
 
-        <div class="diceOne-img">
-            <img src="/src/img/diceOne-thumbnail.png" alt="images" id="diceImgOne">
-        </div>
+      <div class="diceTwo-img">
+        <img
+          src="/src/img/diceTwo-thumbnail.png"
+          alt="images"
+          id="diceImgTwo"
+        />
+      </div>
 
-         <div class="diceTwo-img">
-             <img src="/src/img/diceTwo-thumbnail.png" alt="images" id="diceImgTwo">
-            </div>
+      <div class="playControl">
+        <p class="instruction" id="totalScore">pick a number between 5 & 10</p>
+        <p class="game-status" id="gameStatus"></p>
 
-            <div class="playControl" >
-                    <p class="instruction" id="totalScore">pick a number between 5 & 10</p>
-                    <p class="game-status" id="gameStatus"></p>
-    
-                    <input type="number" class="input-number" placeholder="0" min="6" max="9" id="inputNumber" />
+        <input
+          type="number"
+          class="input-number"
+          placeholder="0"
+          min="6"
+          max="9"
+          id="inputNumber"
+        />
 
-                    <button id="rollTheDiceBtn" class="rollTheDiceBtn" onclick="startGame()">roll the dice</button>
+        <button
+          id="rollTheDiceBtn"
+          class="rollTheDiceBtn"
+          onclick="startGame()"
+        >
+          roll the dice
+        </button>
 
-                    <button onClick="reload()" class="reloadBtn">Go again</button>
-            </div>
-        
-
+        <button onClick="reload()" class="reloadBtn">Go again</button>
+      </div>
     </div>
-    
-
 
     <script src="itsgettingdicey.js"></script>
-</body>
+  </body>
 </html>
